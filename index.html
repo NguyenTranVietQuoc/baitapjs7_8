@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Value</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 style="color: brown;">Bài 3</h1>
+        <h2 id="tieuDeBaiTap">Viết chương trình cho phép người dùng nhập vào giá trị gốc và giá trị replace. Thay đổi
+            giá trị đó nếu trong mảng có chứa giá trị đó đồng thời hiển thị cập nhật thành công, ngược lại giá trị
+            đó không có trong mảng thì thông báo không tìm thấy</h2>
+        <div class="mb-3">
+            <label for="" class="form-label">Nhập vào giá trị cần thay đổi</label>
+            <input type="text" class="form-control" id="soThuc1" aria-describedby="helpId"
+                placeholder="Nhập Số Thực thứ 1" />
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Nhập vào giá trị mới</label>
+            <input type="text" class="form-control" id="soThuc2" aria-describedby="helpId"
+                placeholder="Nhập Số Thực thứ 2" />
+        </div>
+        
+        <button class="btn btn-primary " id="nut">Cập Nhật</button>
+        <div class="bg-danger bg-opacity-75 p-2 text-white mt-3 rounded giatritrungbinh" ></div>
+
+        <div class="container">
+            <h2>Array Operations</h2>
+        
+            <div class="mb-3">
+                <label for="numberInput" class="form-label">Enter integer (press Enter to add):</label>
+                <input type="number" id="numberInput" class="form-control" />
+            </div>
+        
+            <div class="mb-3">
+                <button onclick="performOperation(1)" class="btn btn-primary">Sum of positive numbers</button>
+            </div>
+        
+            <div class="mb-3">
+                <button onclick="performOperation(2)" class="btn btn-primary">Count of positive numbers</button>
+            </div>
+        
+            <div class="mb-3">
+                <button onclick="performOperation(3)" class="btn btn-primary">Find smallest number</button>
+            </div>
+        
+            <div class="mb-3">
+                <button onclick="performOperation(4)" class="btn btn-primary">Find smallest positive number</button>
+            </div>
+        
+            <div class="mb-3">
+                <button onclick="performOperation(5)" class="btn btn-primary">Find last even number</button>
+            </div>
+        
+            <div class="mb-3">
+                <button onclick="performSwap()" class="btn btn-primary">Swap two positions</button>
+            </div>
+        
+            <div class="mb-3">
+                <button onclick="performOperation(7)" class="btn btn-primary">Sort array in ascending order</button>
+            </div>
+        
+            <div class="mb-3">
+                <button onclick="performOperation(8)" class="btn btn-primary">Find first prime number</button>
+            </div>
+        
+            <div class="mb-3">
+                <button onclick="performRealArrayOperation()" class="btn btn-primary">Count integers in real array</button>
+            </div>
+        
+            <div class="mb-3">
+                <button onclick="performOperation(10)" class="btn btn-primary">Compare positive and negative counts</button>
+            </div>
+            <div class="bg-danger bg-opacity-75 p-2 text-white mt-3 rounded result" ></div>
+            <div class="result" id="result"></div>
+        </div>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
